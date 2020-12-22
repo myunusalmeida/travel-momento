@@ -3,24 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 // VARIABLE
-$font-primary : 'Playfair Display',
+$font-primary: 'Playfair Display',
 sans-serif;
-$font-secondary : 'Poppins',
+$font-secondary: 'Poppins',
 sans-serif;
-$color-primary : #FF6D6D;
-$color-primary-alt : #ff6d6dbd;
-$color-secondary: #FEC877;
-$color-dark : #3A3A3A;
-$color-grey : #AFAFAF;
-$color-grey-alt : #801414;
-$radius-primary : 10px;
-$radius-full : 50px;
-$shadow-primary : 10px 10px 121px rgba(183, 183, 183, 0.25);
+$color-primary    : #FF6D6D;
+$color-primary-alt: #ff6d6dbd;
+$color-secondary  : #FEC877;
+$color-dark       : #3A3A3A;
+$color-grey       : #AFAFAF;
+$color-grey-alt   : #801414;
+$radius-primary   : 10px;
+$radius-full      : 50px;
+$shadow-primary   : 10px 10px 121px rgba(183, 183, 183, 0.25);
 
 // ROOT
 * {
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ html {
 
 body {
     scroll-behavior: smooth;
-    font-family: $font-secondary;
+    font-family    : $font-secondary;
 }
 
 h1,
@@ -54,38 +54,38 @@ img {
 }
 
 section {
-    padding-top: 100px;
+    padding-top   : 100px;
     padding-bottom: 40px;
 
     .section-title {
-        font-size: 42px;
-        font-weight: 700;
+        font-size     : 42px;
+        font-weight   : 700;
         text-transform: capitalize;
-        color: $color-dark;
+        color         : $color-dark;
     }
 
     .section-subtitle {
-        margin-top: 20px;
-        font-size: 28px;
+        margin-top : 20px;
+        font-size  : 28px;
         font-weight: 600;
-        color: $color-dark;
+        color      : $color-dark;
     }
 
     .section-description {
-        margin-top: 20px;
-        font-size: 16px;
+        margin-top : 20px;
+        font-size  : 16px;
         font-weight: 400;
-        color: $color-grey;
+        color      : $color-grey;
     }
 
     .section-button {
-        margin-top: 20px;
-        padding: 8px 20px;
-        font-size: 16px;
-        font-weight: 500;
+        margin-top      : 20px;
+        padding         : 8px 20px;
+        font-size       : 16px;
+        font-weight     : 500;
         background-color: $color-primary;
-        color: #FFFFFF;
-        border-radius: $radius-full;
+        color           : #FFFFFF;
+        border-radius   : $radius-full;
 
         &:hover {
             background-color: $color-secondary;
@@ -93,15 +93,15 @@ section {
     }
 
     .section-img {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
+        width        : 100%;
+        height       : 600px;
+        object-fit   : cover;
         border-radius: $radius-primary;
-        margin-left: 20px;
+        margin-left  : 20px;
     }
 
     @media(max-width: 768px) {
-        padding-top: 50px;
+        padding-top   : 50px;
         padding-bottom: 20px;
 
         .section-title {
@@ -113,8 +113,8 @@ section {
         }
 
         .section-img {
-            height: 340px;
-            margin-top: 20px;
+            height     : 340px;
+            margin-top : 20px;
             margin-left: 0;
         }
     }
@@ -124,42 +124,43 @@ section {
 .home-section {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url('../img/img-rio-de-janeiro.jpeg');
-    background-size: cover;
+    background-size    : cover;
     background-position: center center;
-    min-height: 100vh;
-    padding: 10px 0;
+    min-height         : 100vh;
+    padding-top        : 10px;
+    padding-bottom     : 30px;
 
     .nav {
-        padding: 20px 0;
-        display: flex;
-        align-items: center;
+        padding        : 20px 0;
+        display        : flex;
+        align-items    : center;
         justify-content: space-between;
 
         .logo-header {
-            font-size: 24px;
+            font-size  : 24px;
             font-weight: 600;
-            color: #FFFFFF;
-            margin: 0;
+            color      : #FFFFFF;
+            margin     : 0;
         }
 
         .nav-toggle {
             font-size: 24px;
-            color: #FFFFFF;
-            cursor: pointer;
+            color    : #FFFFFF;
+            cursor   : pointer;
         }
 
         .nav-menu {
             .nav-close {
-                position: absolute;
-                top: 30px;
-                right: 30px;
+                position : absolute;
+                top      : 30px;
+                right    : 30px;
                 font-size: 24px;
-                cursor: pointer;
+                cursor   : pointer;
             }
 
             .nav-list {
-                margin: 0;
-                display: flex;
+                margin         : 0;
+                display        : flex;
                 justify-content: space-between;
 
                 .nav-item {
@@ -167,8 +168,8 @@ section {
 
                     .nav-link {
                         font-weight: 500;
-                        color: #FFFFFF;
-                        transition: .3s;
+                        color      : #FFFFFF;
+                        transition : .3s;
 
                         &.active,
                         &:hover {
@@ -189,18 +190,18 @@ section {
 
         @media(max-width: 768px) {
             .nav-menu {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 90%;
-                height: 100%;
-                padding: 20px;
+                position        : fixed;
+                top             : 0;
+                right           : -100%;
+                width           : 90%;
+                height          : 100%;
+                padding         : 20px;
                 background-color: rgba(255, 255, 255, 8);
-                backdrop-filter: blur(10px);
-                transition: .5s;
+                backdrop-filter : blur(10px);
+                transition      : .5s;
 
                 .nav-list {
-                    display: flex;
+                    display       : flex;
                     flex-direction: column;
 
                     .nav-item {
@@ -220,42 +221,42 @@ section {
     }
 
     .content {
-        padding: 0 200px;
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
+        padding        : 0 200px;
+        margin-top     : 80px;
+        display        : flex;
+        flex-direction : column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        align-items    : center;
+        text-align     : center;
 
         .home-title {
-            font-size: 72px;
-            font-weight: 700;
+            font-size     : 72px;
+            font-weight   : 700;
             text-transform: capitalize;
-            color: #FFFFFF;
+            color         : #FFFFFF;
         }
 
         .home-description {
-            margin-top: 20px;
-            width: 82%;
-            font-size: 16px;
+            margin-top : 20px;
+            width      : 82%;
+            font-size  : 16px;
             font-weight: 500;
-            color: $color-grey;
+            color      : $color-grey;
         }
 
         .home-btn {
-            padding: 8px 30px;
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: 500;
-            text-transform: capitalize;
-            color: #FFFFFF;
+            padding         : 8px 30px;
+            margin-top      : 20px;
+            font-size       : 18px;
+            font-weight     : 500;
+            text-transform  : capitalize;
+            color           : #FFFFFF;
             background-color: $color-primary;
-            border-radius: $radius-full;
+            border-radius   : $radius-full;
         }
 
         @media(max-width: 768px) {
-            padding: 0;
+            padding   : 0;
             margin-top: 50px;
 
             .home-title {
@@ -267,12 +268,12 @@ section {
 
 .packages-section {
     .package-card {
-        margin-top: 20px;
-        width: 100%;
-        min-height: 440px;
-        border: none;
+        margin-top   : 20px;
+        width        : 100%;
+        min-height   : 440px;
+        border       : none;
         border-radius: $radius-primary;
-        box-shadow: $shadow-primary;
+        box-shadow   : $shadow-primary;
 
         &.second {
             margin-top: -76px;
@@ -284,12 +285,12 @@ section {
 
         .section-description {
             font-weight: 400;
-            margin-top: 20px;
+            margin-top : 20px;
         }
 
         img {
-            height: 240px;
-            object-fit: cover;
+            height         : 240px;
+            object-fit     : cover;
             object-position: center center;
         }
 
@@ -302,7 +303,7 @@ section {
 }
 
 .galleries-section {
-    width: 100%;
+    width       : 100%;
     padding-left: 120px;
 
     .section-title {
@@ -310,19 +311,19 @@ section {
     }
 
     .gallery-pagination {
-        display: flex;
-        align-items: center;
+        display        : flex;
+        align-items    : center;
         justify-content: space-between;
-        float: right;
-        margin-right: 100px;
+        float          : right;
+        margin-right   : 100px;
 
         .arrow-pagination {
-            padding: 8px 40px;
+            padding         : 8px 40px;
             background-color: $color-primary-alt;
-            color: #ffffff;
-            border-radius: $radius-full;
-            cursor: pointer;
-            transition: .3s;
+            color           : #ffffff;
+            border-radius   : $radius-full;
+            cursor          : pointer;
+            transition      : .3s;
 
             &:first-child {
                 margin-right: 20px;
@@ -330,7 +331,7 @@ section {
 
             &:hover {
                 background-color: $color-primary;
-                outline: none;
+                outline         : none;
             }
         }
     }
@@ -342,28 +343,28 @@ section {
             width: 80%;
 
             .gallery-title {
-                font-size: 20px;
+                font-size  : 20px;
                 font-weight: 600;
-                color: $color-dark;
+                color      : $color-dark;
             }
 
             .gallery-hero {
-                margin-top: 10px;
-                width: 100%;
-                height: 460px;
-                object-fit: cover;
+                margin-top     : 10px;
+                width          : 100%;
+                height         : 460px;
+                object-fit     : cover;
                 object-position: center center;
-                border-radius: $radius-primary;
+                border-radius  : $radius-primary;
             }
 
             .gallery-choice {
-                margin-top: 16px;
-                width: 100%;
-                height: 120px;
-                object-fit: cover;
+                margin-top   : 16px;
+                width        : 100%;
+                height       : 120px;
+                object-fit   : cover;
                 border-radius: $radius-primary;
-                cursor: pointer;
-                transition: .3s;
+                cursor       : pointer;
+                transition   : .3s;
 
                 &:hover {
                     transform: translateY(-10px);
@@ -394,16 +395,16 @@ section {
 // CONTACT US
 .contact-section {
     form {
-        display: flex;
+        display   : flex;
         margin-top: 20px;
 
         .contact-input {
-            flex: 70%;
+            flex         : 70%;
             padding-right: 20px;
-            padding-left: 20px;
-            width: 100%;
-            height: 40px;
-            border: 1px solid $color-grey;
+            padding-left : 20px;
+            width        : 100%;
+            height       : 40px;
+            border       : 1px solid $color-grey;
             border-radius: 0;
 
             &:focus {
@@ -412,48 +413,48 @@ section {
         }
 
         .contact-button {
-            flex: 30%;
-            width: 100%;
-            height: 40px;
+            flex            : 30%;
+            width           : 100%;
+            height          : 40px;
             background-color: $color-primary;
-            color: #FFFFFF;
-            border-radius: 0;
+            color           : #FFFFFF;
+            border-radius   : 0;
         }
     }
 
     .contact-info {
-        display: block;
-        margin-top: 14px;
+        display    : block;
+        margin-top : 14px;
         font-weight: 500;
-        color: $color-dark;
+        color      : $color-dark;
     }
 }
 
 .subscribe-section {
 
     .container {
-        display: flex;
-        align-items: center;
+        display        : flex;
+        align-items    : center;
         justify-content: center;
     }
 
     .content {
         text-align: center;
-        width: 60%;
+        width     : 60%;
 
         form {
-            display: flex;
-            margin-top: 30px;
-            padding-left: 50px;
+            display      : flex;
+            margin-top   : 30px;
+            padding-left : 50px;
             padding-right: 50px;
 
             .subscribe-input {
-                flex: 70%;
+                flex         : 70%;
                 padding-right: 20px;
-                padding-left: 20px;
-                width: 100%;
-                height: 50px;
-                border: 1px solid $color-grey;
+                padding-left : 20px;
+                width        : 100%;
+                height       : 50px;
+                border       : 1px solid $color-grey;
                 border-radius: 0;
 
                 &:focus {
@@ -462,12 +463,12 @@ section {
             }
 
             .subscribe-button {
-                flex: 30%;
-                width: 100%;
-                height: 50px;
+                flex            : 30%;
+                width           : 100%;
+                height          : 50px;
                 background-color: $color-primary;
-                color: #FFFFFF;
-                border-radius: 0;
+                color           : #FFFFFF;
+                border-radius   : 0;
             }
         }
     }
@@ -479,25 +480,25 @@ section {
 
             form {
                 padding-right: 20px;
-                padding-left: 20px;
+                padding-left : 20px;
             }
         }
     }
 }
 
 footer {
-    padding-top: 310px;
-    width: 100%;
-    height: 360px;
-    background-image: url('../img/footer-snow-trees.png');
-    background-size: cover;
+    padding-top        : 310px;
+    width              : 100%;
+    height             : 360px;
+    background-image   : url('../img/footer-snow-trees.png');
+    background-size    : cover;
     background-position: center top;
-    position: relative;
+    position           : relative;
 
     .footer-copyright {
-        font-size: 14px;
+        font-size : 14px;
         text-align: center;
-        color: $color-dark;
-        opacity: .8;
+        color     : $color-dark;
+        opacity   : .8;
     }
 }
